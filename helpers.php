@@ -37,7 +37,7 @@ function table_data($city, $conn) {
 		$table_html = $table_html .  "</tbody></table>";
 	}
 	else
-		$table_html = "<h2>Sorry, the page you requested was not found.</h2>";
+		$table_html = "<h3 style=\"text-align: center;\">Sorry, the page you requested was not found.</h3>";
 	return $table_html;
 }
 ?>
