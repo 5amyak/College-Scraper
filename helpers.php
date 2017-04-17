@@ -11,6 +11,7 @@ function curl($url, $proxy='', $userpass='') {
 	return $result;
 }
 
+// creates table html for display
 function table_data($city, $conn) {
 	$query = "SELECT * FROM colleges WHERE city='$city'";
 	$result = mysqli_query($conn, $query);

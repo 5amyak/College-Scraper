@@ -1,0 +1,5 @@
+INSTRUCTION FOR USAGE
+
+1. Type in following commands on CLI.
+    apache50 start ./Project1
+    mysql50 start

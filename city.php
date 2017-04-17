@@ -1,5 +1,5 @@
 <?php
-//for curl() function
+// for curl() function
 if (isset($_GET["city"])) {
 	include "helpers.php";
 	$city = htmlspecialchars(trim(strtolower($_GET["city"])));

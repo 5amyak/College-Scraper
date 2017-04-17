@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	function loader() {
-		var loader_html = "<img src=\"box.gif\" style=\"position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%);height:250px;width:250px;\">";
+		var loader_html = "<img src=\"box.gif\" style=\"position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%);height:200px;width:200px;\">";
 		$("#table").html(loader_html);
 	}
 
