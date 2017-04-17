@@ -3,3 +3,18 @@ INSTRUCTION FOR USAGE
 1. Type in following commands on CLI.
     apache50 start ./Project1
     mysql50 start
+    
+IMPORTANT FILES
+1. helpers.php
+    commonly used functions
+2. index.php
+    home page html
+3. city.php
+    main file
+    gets html using curl
+    scrapes it
+    stores scraped data in database
+    generates table html from scraped data
+4. scraper.js
+    displays loading icon
+    
