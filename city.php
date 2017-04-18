@@ -1,11 +1,11 @@
 <?php
-// for curl() function
+//for curl() function
 if (isset($_GET["city"])) {
 	include "helpers.php";
 	$city = htmlspecialchars(trim(strtolower($_GET["city"])));
 
 	//connecting to database
-	$conn = mysqli_connect("localhost", "root", "", "scraping_project");
+	$conn = mysqli_connect("localhost", "samyak3098", "cdiHi5OeC0vbEtr8", "scraping_project");
 	if (!$conn) {
 		exit("Connection failed: " . mysqli_connect_error());
 	}

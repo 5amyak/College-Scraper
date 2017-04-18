@@ -1,10 +1,11 @@
 INSTRUCTION FOR USAGE
 
 1. Type in following commands on CLI.
-    apache50 start ./Project1
+    apache50 start ./Project_1
     mysql50 start
     
 IMPORTANT FILES
+
 1. helpers.php
     commonly used functions
 2. index.php
@@ -18,3 +19,7 @@ IMPORTANT FILES
 4. scraper.js
     displays loading icon
     
+IMPORTANT NOTE
+If you're not using a proxy server update the arguements of curl function in city.php accordingly.
+You may need to modify curl function in helpers.php according to your network.
+curl function is used twice in city.php.
