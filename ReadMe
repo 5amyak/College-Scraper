@@ -1,8 +1,9 @@
 INSTRUCTION FOR USAGE
 
-1. Type in following commands on CLI.
-    apache50 start ./Project_1
+1. Type in following commands on CLI if using CS50 IDE
+    apache50 start ./<project-name>
     mysql50 start
+2. If using XAMPP, store the project in htdocs folder.
     
 IMPORTANT FILES
 
