@@ -7,11 +7,11 @@ The app creates a URL of Shiksha.com for any city as an input and scrapes the da
 
 Before trying to run the project create a database for the project by importing __colleges.sql__ file present inside __model__ folder.
 1. Type in following commands on CLI of Cloud9 if using CS50 IDE
-    * apache50 start ./_project_name_
-    * mysql50 start
+      * apache50 start ./_project_name_
+      * mysql50 start
 2. If using XAMPP, simply store the project in the htdocs folder.
 
-### Installing
+## Deployment
 
 If you're not using a proxy server update the arguements of curl function in _city.php_ accordingly.
 curl function is used twice in _city.php_ with proxy and authentication.
@@ -23,9 +23,20 @@ curl($pageUrl, "host:port", "username:password")
 
 By default all the above fields are used, just remove any field except $pageUrl that is not applicable to your network.
 
-## Deployment
+## Important Files
 
-Add additional notes about how to deploy this on a live system
+1. helpers.php
+      * commonly used functions
+2. index.php
+      * home page html
+3. city.php
+      * main file
+      * gets html using curl
+      * scrapes it
+      * stores scraped data in database
+      * generates table html from scraped data
+4. scraper.js
+      * displays loading icon and gets data from backend
 
 ## Built With
 
@@ -34,10 +45,4 @@ Add additional notes about how to deploy this on a live system
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
