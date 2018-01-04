@@ -13,28 +13,28 @@ Before trying to run the project create a database for the project by importing 
 
 ## Deployment
 
-If you're not using a proxy server update the arguements of curl function in _city.php_ accordingly.
+If you're not using a proxy server update the arguments of curl function in _city.php_ accordingly.
 curl function is used twice in _city.php_ with proxy and authentication.
-curl function is implemented in _helpers.php_ where required parameters are set to fetch page.
+curl function is implemented in _helpers.php_ where required parameters are set to fetch a page.
 
 ```
 curl($pageUrl, "host:port", "username:password")
 ```
 
-By default all the above fields are used, just remove any field except $pageUrl that is not applicable to your network.
+By default all the above fields are used, just remove any field except $pageUrl, if not applicable to your network.
 
 ## Important Files
 
 1. helpers.php
       * commonly used functions
 2. index.php
-      * home page html
+      * home page HTML
 3. city.php
       * main file
-      * gets html using curl
+      * gets HTML using curl
       * scrapes it
       * stores scraped data in database
-      * generates table html from scraped data
+      * generates table HTML from scraped data
 4. scraper.js
       * displays loading icon and gets data from backend
 
